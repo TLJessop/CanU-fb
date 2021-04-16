@@ -54,9 +54,24 @@ app.post('/send', (request, response) =>{
     const data = request.body;
 
     saveData(data.firstNameS,data.lastNameS,data.companyS, data.email, data.cityS, data.stateS, data.firstNameR, data.lastNameR,data.companyR,data.cityR,data.stateR);
-    sendEmail(data.email);
+    sendEmail(data.email)
+
     if (data.stateS == data.stateR) {
-        response.render('ansYesCA');
+        switch (data.stateS) {
+            case 'AR':
+                    response.render('ansYesAR');
+                    break;
+            case 'CA':
+                response.render('ansYesCA');
+                    break;
+            case 'CA':
+                response.render('ansYesCA');
+                    break;
+
+            default:
+                break;
+        }
+        
     } else {
         response.render('ansNo');
     }

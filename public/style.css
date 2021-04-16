@@ -100,13 +100,23 @@ ul{
 
 .ansYes, .ansNo{
     text-align: center;
-    padding: 10px;
     background: green;
     color: #fff;
-    display: none;
     border-radius: 25px;
 }
 
+.ansBig{
+    font-size: 36pt;
+}
+
+.ansBody{
+    font-size: 24pt;
+}
+
+.ansYes a {
+    margin: 0;
+    padding: 0;
+}
 /* Large screens */
 @media(min-width:700px){
     .wrapper{
@@ -118,3 +128,4 @@ ul{
         text-align: left;
     }
 }
+
