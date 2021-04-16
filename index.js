@@ -1,7 +1,6 @@
 //Depends
 const { response } = require('express');
 const express = require('express');
-const sgMail = require('@sendgrid/mail');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const exphbs = require('express-handlebars');
