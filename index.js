@@ -31,6 +31,14 @@ app.get('/', (request, responce)=>{
 });
 
 app.post('/send', (request, response) =>{
-    console.log(request.body);
-    response.render('index');
+    const data = request.body;
+
+    console.log(data);
+
+    if (data.stateS == data.stateR) {
+        response.render('ansYesCA');
+    } else {
+        response.render('ansNo');
+    }
+    
 })
