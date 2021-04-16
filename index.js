@@ -29,3 +29,8 @@ app.locals.layout = false;
 app.get('/', (request, responce)=>{
     responce.render('index');
 });
+
+app.post('/send', (request, response) =>{
+    console.log(request.body);
+    response.render('index');
+})
