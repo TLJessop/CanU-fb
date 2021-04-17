@@ -60,6 +60,9 @@ app.post('/send', (request, response) =>{
             case 'AR':
                     response.render('ansYesAR');
                     break;
+            case 'AZ':
+                response.render('ansYesAZ');
+                break;
             case 'CA':
                 response.render('ansYesCA');
                     break;
