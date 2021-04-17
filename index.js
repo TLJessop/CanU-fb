@@ -87,6 +87,9 @@ app.post('/send', (request, response) =>{
             case 'IL':
                 response.render('ansYesIL');
                     break;
+            case 'LA':
+                response.render('ansYesLA');
+                    break;
             case 'OR':
                 response.render('ansYesOR');
                     break;
