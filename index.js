@@ -129,6 +129,9 @@ app.post('/send', (request, response) =>{
             case 'OR':
                 response.render('ansYesOR');
                     break;
+            case 'PA':
+                response.render('ansYesPA');
+                    break;
 
             default:
                 break;
