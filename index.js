@@ -135,6 +135,9 @@ app.post('/send', (request, response) =>{
             case 'RI':
                 response.render('ansYesRI');
                     break;
+            case 'UT':
+                response.render('ansYesUT');
+                    break;
 
             default:
                 break;
