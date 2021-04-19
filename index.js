@@ -107,13 +107,16 @@ app.post('/send', (request, response) =>{
                 break;
             case 'NH':
                 response.render('ansYesNH');
-            break;
+                    break;
             case 'NJ':
                 response.render('ansYesNJ');
-            break;
+                    break;
             case 'NM':
                 response.render('ansYesNM');
-            break;
+                    break;
+            case 'NY':
+                response.render('ansYesNY');
+                    break;
             case 'OR':
                 response.render('ansYesOR');
                     break;
