@@ -76,12 +76,14 @@ ul{
     margin: 0;
 }
 
+.shippingInfo form 
+
 .shippingInfo .full{
     grid-column: 1/3;
 }
 
-.shippingInfo form button, .shippingInfo form input{
-    width: 100%;
+.shippingInfo form button, .shippingInfo form input, .shippingInfo form select {
+    width: 80%;
     padding: 1em;
     border: 1px solid var(--light-bg-color);
 }
