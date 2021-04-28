@@ -70,6 +70,8 @@ ul{
 
 .shippingInfo form label, .shippingInfo form h3 {
     display: block;
+    padding: 0;
+    margin: 0;
 }
 
 .shippingInfo form p{
